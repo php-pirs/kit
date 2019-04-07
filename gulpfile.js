@@ -50,10 +50,10 @@ gulp.task('prebuild', async function () {
         .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/fonts'));
 
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('dist/js'));
 
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));
